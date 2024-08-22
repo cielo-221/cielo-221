@@ -1,0 +1,20 @@
+# Pedir al usuario que ingrese un número entero positivo
+numero = int(input("Ingresa un número entero positivo: "))
+
+# Verificar que el número ingresado sea positivo
+if numero <= 0:
+    print("Por favor, ingresa un número entero positivo.")
+else:
+    # Inicializar la variable para la suma de los dígitos
+    suma_digitos = 0
+    
+    # Convertir el número a una cadena para iterar sobre cada dígito
+    numero_str = str(numero)
+    
+    # Iterar sobre cada carácter en la cadena
+    for digito in numero_str:
+        # Convertir el carácter a entero y sumarlo
+        suma_digitos += int(digito)
+    
+    # Imprimir la suma de los dígitos
+    print(f"La suma de los dígitos del número es: {suma_digitos}")

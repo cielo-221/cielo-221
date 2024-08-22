@@ -1,0 +1,23 @@
+# Inicializar la variable para almacenar el mayor número
+mayor_numero = None
+
+while True:
+    # Pedir al usuario que ingrese un número entero positivo
+    numero = int(input("Ingresa un número entero positivo (0 para terminar): "))
+    
+    # Verificar si el número ingresado es 0
+    if numero == 0:
+        break
+    
+    # Verificar si el número ingresado es positivo
+    if numero > 0:
+        # Si es el primer número ingresado, inicializar la variable mayor_numero
+        if mayor_numero is None:
+            mayor_numero = numero
+        # Comparar y actualizar el mayor número si es necesario
+        elif numero > mayor_numero:
+            mayor_numero = numero
+    else:
+        print("Por favor, ingresa un número entero positivo.")
+
+# Informar el mayor número ing
